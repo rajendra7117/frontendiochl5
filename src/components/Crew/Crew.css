@@ -1,0 +1,60 @@
+.crew{
+    width: 100vw !important;
+    height: 100vh !important;
+    background: url('../../../public/assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+       
+}
+
+.crew .container{
+    width: 100vw;
+    height: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin-top: 2rem;
+   
+}
+
+
+
+.crew .container h1{
+ 
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Barlow Condensed;
+    align-self: flex-start;
+    align-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+.crew .container h1 span{
+color: #979797;
+}
+
+@media screen and (max-width: 850px) {
+    .crew{
+        background: url('../../../public/assets/crew/background-crew-tablet.jpg');
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .crew{
+        background: url('../../../public/assets/crew/background-crew-mobile.jpg');
+        padding: 0 !important;
+    }
+    .crew .container h1{
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 2rem !important;
+        margin-inline: auto;
+    }
+}

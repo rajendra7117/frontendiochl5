@@ -1,0 +1,210 @@
+.places-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+.sec-1{
+    width: 40%;
+    height: 100%;
+    padding: 2rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+
+}
+.sec-1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    margin-left: 1rem;
+}
+.selection{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 13rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 0 !important;
+}
+.selection li{
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.sec-1 p{
+    width: 25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.sec-1 .line{
+  width: 83%;
+  background-color: #383B4B !important;
+  margin: 0;
+  align-self: flex-start;
+}
+.distance{
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    
+    text-align: left;
+}
+.distance div h3{
+    font-weight: 100;
+    font-size: 16px;
+}
+.distance div span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.distance div:nth-child(2){
+margin-left: 4rem;
+}
+.places-container .sec-2{
+    height: 100%;
+}
+
+.places-container .sec-2 img{
+    width: 400px !important;
+    height: 400px !important;
+    transition: all .3ms ease-in-out;
+}
+.selection li.active{
+    border-bottom: 2px solid #ffffff;
+    padding: 0.3rem;
+}
+.places-container .sec-2 img:hover{
+    transform: rotate(90deg)
+}
+
+
+@media screen and (max-width: 850px){
+    .places-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+
+    }
+    .sec-2{
+        text-align: left;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto !important;
+    }
+    .places-container .sec-2 img{
+        width: 330px !important;
+        height: 330px !important;
+    }
+    .sec-2 h1{
+        align-self: flex-start !important;
+    }
+    .sec-1{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin-top: 0 !important;
+    }
+    .selection{
+        margin: 2rem auto;
+        width: 60%;
+        align-self: center;
+       
+        align-items: center !important;
+    }
+    .sec-1 p{
+        width: 70%;
+        margin: 1rem auto;
+    }
+    .distance{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .sec-1 .line{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .places-container{
+        width: 100%;
+        align-items: center;
+        margin-top: 0 !important;
+        height: 100% !important;
+        justify-content: center !important;
+    }
+    .places-container .sec-2{
+        height: 200px !important;
+    }
+    .places-container .sec-2 img{
+        width: 10rem !important;
+        height: 8rem !important;
+    }
+    .sec-2 h1{
+        font-size: 1.3rem;
+        margin: 0 auto !important;
+        margin-bottom: 0.2rem !important;
+        font-family: 'Bellefair', serif;
+
+    }
+    .sec-1{
+        width: 100%;
+        align-items: center;
+    }
+    .selection{
+        width: 70%;
+        margin: 1rem auto;
+        padding-left: 0;
+    }
+    .places-container .sec-1 h1{
+        font-size: 4rem;
+      
+        margin: 0 !important;
+     
+    }
+    .sec-1 p{
+        margin: 0 !important;
+        align-self: center;
+        width: 90%;
+        text-align: center;
+        font-size: 15px !important;
+    }
+    .sec-1 .line{
+        width: 90%;
+        align-items: center;
+        margin: 1rem;
+        display: block;
+    }
+    .distance{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .distance div{
+        margin: 0 !important;
+        align-items: center !important;
+        width: 10rem;
+        text-align: center;
+    }
+  .line{
+      margin: 0 !important;
+      margin-top: 0.3rem !important;
+  }
+    .distance div span{
+        font-size: 1.3rem;
+        margin: 0 !important;
+        letter-spacing: 0.3rem;
+    }
+}

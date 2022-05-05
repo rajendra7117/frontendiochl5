@@ -1,0 +1,156 @@
+.type-container{
+    width: 100%;
+    height: auto;
+    
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.type-text{
+    width: 40%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin-left: auto;
+
+   
+}
+.selectors{
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.selectors span{
+    width: 2rem;
+    padding: 0.6rem;
+   
+    border: 1px solid #fff;
+    border-radius: 50%;
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.selectors span.active{
+    background-color: #fff;
+    color: #000;
+}
+.type-info{
+    height: 90%;
+    margin-top: 1.8rem;
+    text-align: left;
+    margin-left: 2rem;
+    color: #ffffff !important;
+}
+.type-info h3{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.type-info h2{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-family: 'Bellefair', serif;
+}
+.type-info p{
+    height: 10rem !important;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 2rem;
+    color: #D0D6F9;
+}
+.type-img{
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 50%;
+    
+}
+.type-img img{
+    height: 29rem;
+    margin-left: auto;
+    width: 75%;
+    
+}
+
+
+@media screen and (max-width: 850px) {
+    .type-container{
+        flex-direction: column-reverse;
+    }
+    .type-img{
+        width: 100%;
+    }
+    .type-img img{
+        width: 100%;
+        height: 80%;
+    }
+    .type-text{
+        width: 100%;
+        margin: 1rem 0 !important;
+        flex-direction: column;
+    }
+    .selectors{
+        flex-direction: row;
+        width: 15rem;
+
+    }
+    .type-info{
+        width: 80%;
+        align-self: center;
+        text-align: center;
+
+    }
+    .type-info p{
+        width:76%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.4rem !important;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .type-container{
+        height: 80%;
+    }
+    .type-info{
+        margin: 0 !important;
+    }
+    .type-container h1{
+        top: 4.5rem;
+        font-size: 1rem !important;
+    }
+    .type-info h2{
+        margin: 0.1 0;
+        font-size: 1.7rem !important;
+        width: 100%;
+    }
+    .type-info h3{
+       margin-top: 3px;
+    }
+    .type-img{
+        height: 15rem !important;
+        margin-top: 5rem;
+    }
+    .type-info p{
+        width: 100%;
+        font-size: 1rem !important;
+        line-height: 15px;
+    }
+    
+}
